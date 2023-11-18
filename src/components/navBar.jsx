@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="sticky top-0 z-10 bg-white">
       <div className="container hidden lg:block">
         <div className="flex justify-between  items-center p-8 ">
-          <p className="text-4xl font-bold">Logo</p>
+          <p className="text-4xl font-extrabold">Logo</p>
           <div className="relative w-full max-w-[500px]">
             <input
               type="text"
