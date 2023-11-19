@@ -23,6 +23,30 @@ const data = [
     count: "5 Products",
     img: "/images/meat.jpg",
   },
+  {
+    id: 4,
+    name: "Bakery",
+    count: "9 Products",
+    img: "/images/fruits.jpg",
+  },
+  {
+    id: 5,
+    name: "Aromatics",
+    count: "7 Products",
+    img: "/images/veg.jpg",
+  },
+  {
+    id: 6,
+    name: "Dairy",
+    count: "9 Products",
+    img: "/images/can.jpg",
+  },
+  {
+    id: 7,
+    name: "Coocking oil",
+    count: "5 Products",
+    img: "/images/meat.jpg",
+  },
 ];
 
 import CategoryCard from "./CategoryCard";
