@@ -40,7 +40,14 @@ const FruitsSection = () => {
         <p className="text-2xl font-bold pl-3">Fruits</p>
         <div className="grid grid-cols-5 gap-10">
           {data.map((ele) => {
-            return <ProductCard key={ele.id} ele={ele} />;
+            return (
+              <ProductCard
+                key={ele.id}
+                name={ele.name}
+                img={ele.img}
+                price={ele.price}
+              />
+            );
           })}
         </div>
       </div>

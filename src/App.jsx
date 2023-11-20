@@ -7,18 +7,27 @@ import VegSection from "./components/VegSection";
 import NavBar from "./components/navBar";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// minified version is also included
+// import 'react-toastify/dist/ReactToastify.min.css';
+import { CardContextProvider } from "./context/ContextCard";
 
 function App() {
-  const [showCart, setShowCart] = useState(true);
+  const [showCart, setShowCart] = useState(false);
   return (
-    <main>
-      <NavBar />
-      <Hero />
-      <Category />
-      <FruitsSection />
-      <VegSection />
-      <Footer />
-    </main>
+    <CardContextProvider>
+      <main>
+        <NavBar setShowCart={setShowCart} />
+        <Hero />
+        <Category />
+        <FruitsSection />
+        <VegSection />
+        <Footer />
+        {showCart && <Cart showCart={showCart} setShowCart={setShowCart} />}
+        <ToastContainer />
+      </main>
+    </CardContextProvider>
   );
 }
 

@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { IoIosSearch } from "react-icons/io";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 import CardCount from "./CardCount";
 
-const NavBar = () => {
+const NavBar = ({ setShowCart }) => {
   return (
     <div className="sticky top-0 z-10 bg-white">
       <div className="container hidden lg:block">
@@ -23,7 +24,10 @@ const NavBar = () => {
             <div className=" rounded-full border border-gray-400 w-[50px] h-[50px] grid place-items-center text-[22px] ">
               <AiOutlineUser />
             </div>
-            <div className="relative rounded-full border border-gray-400 w-[50px] h-[50px] grid place-items-center text-[22px] ">
+            <div
+              className="relative rounded-full border border-gray-400 w-[50px] h-[50px] grid place-items-center text-[22px] cursor-pointer "
+              onClick={() => setShowCart(true)}
+            >
               <AiOutlineShoppingCart />
               <CardCount />
             </div>
