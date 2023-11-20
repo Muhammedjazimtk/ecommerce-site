@@ -27,25 +27,25 @@ const data = [
     id: 4,
     name: "Bakery",
     count: "9 Products",
-    img: "/images/fruits.jpg",
+    img: "/images/bakery.jpg",
   },
   {
     id: 5,
-    name: "Aromatics",
+    name: "Spices",
     count: "7 Products",
-    img: "/images/veg.jpg",
+    img: "/images/spice.jpg",
   },
   {
     id: 6,
     name: "Dairy",
     count: "9 Products",
-    img: "/images/can.jpg",
+    img: "/images/dairy.jpg",
   },
   {
     id: 7,
     name: "Coocking oil",
     count: "5 Products",
-    img: "/images/meat.jpg",
+    img: "/images/oil.jpg",
   },
 ];
 

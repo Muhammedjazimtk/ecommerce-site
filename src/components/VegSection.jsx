@@ -1,43 +1,42 @@
 import ProductCard from "./ProductCard";
-
 const data = [
   {
     id: 0,
-    name: "Apple",
+    name: "Brinjal",
     price: "₹100",
-    img: "/images/fruits/apple.jpg",
+    img: "/images/vegetable/brinjal.jpg",
   },
   {
     id: 1,
-    name: "Banana",
+    name: "Carrot",
     price: "₹100",
-    img: "/images/fruits/banana.jpg",
+    img: "/images/vegetable/carrot.jpg",
   },
   {
     id: 2,
-    name: "Grapes",
+    name: "Onion",
     price: "₹100",
-    img: "/images/fruits/grapes.jpg",
+    img: "/images/vegetable/onion.jpg",
   },
   {
     id: 3,
-    name: "Kiwi",
+    name: "Potato",
     price: "₹100",
-    img: "/images/fruits/kiwi.jpg",
+    img: "/images/vegetable/potato.jpg",
   },
   {
     id: 4,
-    name: "Orange",
+    name: "Tomato",
     price: "₹100",
-    img: "/images/fruits/orange.jpg",
+    img: "/images/vegetable/tomato.jpg",
   },
 ];
 
-const FruitsSection = () => {
+const VegSection = () => {
   return (
     <div className="container pt-16 px-9">
       <div className="flex gap-2 flex-col">
-        <p className="text-2xl font-bold pl-3">Fruits</p>
+        <p className="text-2xl font-bold pl-3">Vegetables</p>
         <div className="grid grid-cols-5 gap-10">
           {data.map((ele) => {
             return <ProductCard key={ele.id} ele={ele} />;
@@ -48,4 +47,4 @@ const FruitsSection = () => {
   );
 };
 
-export default FruitsSection;
+export default VegSection;
