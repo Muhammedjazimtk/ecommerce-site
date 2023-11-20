@@ -3,7 +3,9 @@ const CategoryCard = ({ item }) => {
   return (
     <div className="flex h-[150px] shadow-xl p-5 justify-around hover:scale-[1.02]  items-center rounded-lg">
       <div className="flex gap-1 flex-col">
-        <p className="text-lg font-semibold">{item.name}</p>
+        <a href="#fruits">
+          <p className="text-lg font-semibold">{item.name}</p>
+        </a>
         <p className="text-gray-600 text-sm">{item.count}</p>
       </div>
       <img

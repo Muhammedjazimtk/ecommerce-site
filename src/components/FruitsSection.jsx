@@ -35,7 +35,7 @@ const data = [
 
 const FruitsSection = () => {
   return (
-    <div className="container pt-16 px-9">
+    <div id="fruits" className="container pt-16 px-9">
       <div className="flex gap-2 flex-col">
         <p className="text-2xl font-bold pl-3">Fruits</p>
         <div className="grid grid-cols-5 gap-10">
